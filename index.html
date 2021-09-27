@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p class=" heading ">Rich text editor.</p>
+    <div class="toolbar ">
+        <div class="editBtns ">
+            <div class="buttonGroup ">
+                <button data-action="h2 " class="formatBlock-btn">
+                    <abbr title="Heading">Tt</abbr>
+                </button>
+            </div>
+            <div class="buttonGroup ">
+                <button data-action="bold" class="toolbar-btn" style="font-weight: 900; ">
+                    <abbr title="Bold">B</abbr>
+                </button>
+                <button data-action="italic" class="toolbar-btn" style="font-style: italic; ">
+                    <abbr title="Italic">I</abbr>
+                </button>
+                <button data-action="underline" class="toolbar-btn" style="text-decoration: underline; ">
+                    <abbr title="Underline">U</abbr>
+                </button>
+            </div>
+            <div class="buttonGroup ">
+                <abbr title="create list">
+                    <button data-action="ul " class="unorderedList ">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="5.30005" y1="1.59106" x2="23.5001" y2="1.59106" stroke="black" stroke-linecap="round"/>
+                        <line x1="5.30005" y1="7.05713" x2="23.5001" y2="7.05713" stroke="black" stroke-linecap="round"/>
+                        <line x1="5.30005" y1="12.5227" x2="23.5001" y2="12.5227" stroke="black" stroke-linecap="round"/>
+                        <line x1="5.30005" y1="17.9885" x2="23.5001" y2="17.9885" stroke="black" stroke-linecap="round"/>
+                        <line x1="5.30005" y1="23.4546" x2="23.5001" y2="23.4546" stroke="black" stroke-linecap="round"/>
+                        <path d="M3.59998 1.54454L0.899972 2.96461L0.899972 0.12447L3.59998 1.54454Z" fill="#AA49F7"/>
+                        <path d="M3.59998 7.01036L0.899972 8.43043L0.899972 5.59029L3.59998 7.01036Z" fill="#AA49F7"/>
+                        <path d="M3.59998 12.4762L0.899972 13.8962L0.899972 11.0561L3.59998 12.4762Z" fill="#AA49F7"/>
+                        <path d="M3.59998 17.942L0.899972 19.3621L0.899972 16.5219L3.59998 17.942Z" fill="#AA49F7"/>
+                        <path d="M3.59998 23.4081L0.899972 24.8281L0.899972 21.988L3.59998 23.4081Z" fill="#AA49F7"/>
+                        </svg>
+                        
+                </button></abbr>
+            </div>
+            <div class="buttonGroup ">
+                <button data-action="justifyLeft " class="alignment-btn ">
+                    <svg width="19 " height="21 " viewBox="0 0 19 21 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                        <line x1="0.5 " y1="0.5 " x2="18.5 " y2="0.5 " stroke="black " stroke-linecap="round "/>
+                        <line x1="0.5 " y1="5.5 " x2="12.5 " y2="5.5 " stroke="black " stroke-linecap="round "/>
+                        <line x1="0.5 " y1="10.5 " x2="18.5 " y2="10.5 " stroke="black " stroke-linecap="round "/>
+                        <line x1="0.5 " y1="15.5 " x2="12.5 " y2="15.5 " stroke="black " stroke-linecap="round "/>
+                        <line x1="0.5 " y1="20.5 " x2="18.5 " y2="20.5 " stroke="black " stroke-linecap="round "/>
+                        </svg>
+                        
+                                            
+                </button>
+                <button data-action="justifyCenter " class="alignment-btn ">
+                    <svg width="19 " height="21 " viewBox="0 0 19 21 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                        <line x1="0.5 " y1="-0.5 " x2="18.5 " y2="-0.5 " transform="matrix(-1 0 0 1 19 1) " stroke="black " stroke-linecap="round "/>
+                        <line x1="0.5 " y1="-0.5 " x2="12.5 " y2="-0.5 " transform="matrix(-1 0 0 1 16 6) " stroke="black " stroke-linecap="round "/>
+                        <line x1="0.5 " y1="-0.5 " x2="18.5 " y2="-0.5 " transform="matrix(-1 0 0 1 19 11) " stroke="black " stroke-linecap="round "/>
+                        <line x1="0.5 " y1="-0.5 " x2="12.5 " y2="-0.5 " transform="matrix(-1 0 0 1 16 16) " stroke="black " stroke-linecap="round "/>
+                        <line x1="0.5 " y1="-0.5 " x2="18.5 " y2="-0.5 " transform="matrix(-1 0 0 1 19 21) " stroke="black " stroke-linecap="round "/>
+                        </svg>
+                                            
+                </button>
+                <button data-action="justifyRight " class="alignment-btn ">
+                    <svg width="19 " height="21 " viewBox="0 0 19 21 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                        <line x1="0.5 " y1="-0.5 " x2="18.5 " y2="-0.5 " transform="matrix(-1 0 0 1 19 1) " stroke="black " stroke-linecap="round "/>
+                        <line x1="0.5 " y1="-0.5 " x2="12.5 " y2="-0.5 " transform="matrix(-1 0 0 1 19 6) " stroke="black " stroke-linecap="round "/>
+                        <line x1="0.5 " y1="-0.5 " x2="18.5 " y2="-0.5 " transform="matrix(-1 0 0 1 19 11) " stroke="black " stroke-linecap="round "/>
+                        <line x1="0.5 " y1="-0.5 " x2="12.5 " y2="-0.5 " transform="matrix(-1 0 0 1 19 16) " stroke="black " stroke-linecap="round "/>
+                        <line x1="0.5 " y1="-0.5 " x2="18.5 " y2="-0.5 " transform="matrix(-1 0 0 1 19 21) " stroke="black " stroke-linecap="round "/>
+                        </svg>
+                                            
+                </button>
+            </div>
+        </div>
+        <div class="viewBtns">
+            <button class="viewTextBtn">view text</button>
+            <button class="viewHTMLBtn">view HTML</button>
+        </div>
+    </div>
+    <div class="editor" contenteditable="true">
+    </div>
+    <script src="main.js "></script>
+</body>
+
+</html>

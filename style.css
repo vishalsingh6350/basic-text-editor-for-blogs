@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span {
+    background-color: aqua;
+}
+
+body {
+    background: #f9f9fa;
+}
+
+abbr {
+    text-decoration: unset;
+}
+
+.heading {
+    color: #9b37ed;
+    padding: 5px;
+    padding-left: 10px;
+    font-family: 'Poppins';
+    font-size: 1.5em;
+    border-bottom: 1px solid #6c6c6f70;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.editor {
+    width: 90%;
+    min-width: 50%;
+    font-family: 'Poppins';
+    margin: auto;
+    border: 1px rgba(112, 128, 144, 0.501) solid;
+    border-radius: 7px;
+    padding: 40px 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+    resize: both;
+    overflow: auto;
+    color: #5955ac;
+    min-height: 80vh;
+    outline: none;
+    transition: box-shadow ease 0.3s;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.editBtns {
+    display: flex;
+    align-items: stretch;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.toolbar .editBtns .buttonGroup {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-right: 1px solid #7272a079;
+}
+
+.toolbar .editBtns .buttonGroup button {
+    /* background-color: rgb(43, 95, 141); */
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 7px 10px;
+    margin: 0px 10px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+    transition: all ease 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewBtns {
+    display: flex;
+    align-items: center;
+}
+
+.viewBtns button {
+    white-space: nowrap;
+    background-color: #9b37ed;
+    color: white;
+    padding: 12px 20px;
+    font-weight: 900;
+    margin: 0px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.toolbar .editBtns .buttonGroup button:active {
+    background-color: #9b37ed;
+    color: white;
+}
+
+.toolbar .editBtns .buttonGroup button:hover {
+    background-color: #e1bcff9a;
+}
+
+.toolbar .editBtns .buttonGroup button:active svg line {
+    stroke: #f9f9fa;
+    stroke-width: 2px;
+}
+
+.toolbar .editBtns .buttonGroup button img {
+    width: 20px;
+    height: 15px;
+}
+
+@media only screen and (max-width:600px) {
+    .heading {
+        border: none;
+    }
+    .toolbar {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .buttonGroup {
+        /* background-color: #e8e8e8; */
+        border: 1px solid #7272a079;
+    }
+    .toolbar .editBtns {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .editor {
+        max-height: 30vh;
+        width: 95%;
+        margin-top: 30px;
+    }
+}
